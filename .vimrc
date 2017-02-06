@@ -11,8 +11,9 @@ call vundle#begin()
     Plugin 'VundleVim/Vundle.vim'
     Plugin 'tomasr/molokai'
     Plugin 'scrooloose/nerdtree'
-    Plugin 'scrooloose/syntastic'
     Plugin 'chase/vim-ansible-yaml'
+    Plugin 'scrooloose/syntastic'
+    Plugin 'indentLine.vim'
     " All of your Plugins must be added before the following line
     "
     call vundle#end()            " required
@@ -29,14 +30,16 @@ call vundle#begin()
     " see :h vundle for more details or wiki for FAQ
     " " Put your non-Plugin stuff after this line
 
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
+"set statusline+=%#warningmsg#
+"set statusline+=%{SyntasticStatuslineFlag()}
+"set statusline+=%*
 
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
+"let g:syntastic_always_populate_loc_list = 1
+"let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+let g:indentLine_color_term = 211
+let g:indentLine_setColors = 1
 
 let g:rehash256 = 1
 set expandtab       
